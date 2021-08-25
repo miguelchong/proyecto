@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+/* img{
+    width: 100px;
+} */
+
+.logo > img{
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 40px;
+    margin-left: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 12px;
+    margin: 0 10px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+
+.nav-menu-link:hover {
+    background-color: #034574;
+    transition: 0.1s;
+}
+
+.elementos-conteiner > * {
+    box-shadow: -1px 1px 7px 0 rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    background-color: #73a8e4;
+    text-align: center;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #0769e9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #fffbf7;
+}
+
+.main{
+    grid-area: main;
+    background-color: #f5f5f5;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #34516d;
+}
+
+.elementos-conteiner {
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "header" 100px
+        "navbar" 50px
+        "main"   auto
+        "sidebar" 100px
+        "footer" 50px;
+}
+
+@media (min-width: 600px) {
+    .elementos-conteiner {
+        grid-template:
+        "header  header" 100px
+        "navbar  navbar" 50px
+        "sidebar main"   auto
+        "footer  footer"50px /
+        200px    auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .elementos-conteiner {
+        grid-template:
+        "header  header header" 100px
+        "navbar  main   sidebar" auto
+        "footer  footer footer"50px /
+         200px   auto   200px;
+    }
+    .nav-menu {
+        justify-content: space-around;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+}
+

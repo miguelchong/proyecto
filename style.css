@@ -14,14 +14,34 @@ html {
     height: 100%;
 }
 
-/* img{
-    width: 100px;
-} */
+.main-conteiner h2,{
+    padding: 30px 0 15px 0;
+}
+
+.main-conteiner p {
+    text-align: justify;
+    padding: 30px 0 15px 0;
+}
+
+.main-conteiner img {
+    padding: 30px 0 auto 0;
+}
+
+.sidebar-conteiner img {
+    width: 140px;
+    height: auto;
+}
+
+.sidebar-conteiner article p {
+    font-size: 15px;
+    padding: 25px 0 0 0;
+    text-align: justify;
+}
 
 .logo > img{
     background-color: #ffffff;
     border-radius: 4px;
-    width: 40px;
+    width: 50px;
     margin-left: 50px;
 }
 
@@ -34,6 +54,7 @@ html {
     font-size: 12px;
     margin: 0 10px;
     line-height: 30px;
+    text-align: justify;
     text-transform: uppercase;
 }
 
@@ -59,6 +80,7 @@ html {
     grid-area: header;
     background-color: #73a8e4;
     text-align: center;
+    line-height: 40px;
 }
 
 .navbar{

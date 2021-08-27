@@ -146,5 +146,9 @@ html {
         flex-direction: column;
         margin-right: 40px;
     }
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 

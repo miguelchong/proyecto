@@ -41,8 +41,7 @@ html {
 .logo > img{
     background-color: #ffffff;
     border-radius: 4px;
-    width: 50px;
-    margin-left: 50px;
+    width: 80px;
 }
 
 .nav-menu {
@@ -52,9 +51,8 @@ html {
 
 .nav-menu-item{
     font-size: 12px;
-    margin: 0 10px;
-    line-height: 30px;
-    text-align: justify;
+    margin: 20px 15px;
+    text-align: initial;
     text-transform: uppercase;
 }
 

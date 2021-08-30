@@ -10,6 +10,10 @@ body {
     min-height: 100%;
 }
 
+body h1 {
+    font-size: 1rem;
+}
+
 html {
     height: 100%;
 }
@@ -24,7 +28,7 @@ html {
 }
 
 .main-conteiner img {
-    padding: 30px 0 auto 0;
+    padding: 20px 0 auto 0;
 }
 
 .sidebar-conteiner img {
@@ -63,7 +67,7 @@ html {
 }
 
 .nav-menu-link:hover {
-    background-color: #034574;
+    background-color: #0b1fcf;
     transition: 0.1s;
 }
 
@@ -113,21 +117,24 @@ html {
     display: grid;
     gap: 10px;
     grid-template:
-        "header" 150px
-        "navbar" 50px
+        "header" 50px
+        "navbar" 100px
         "main"   auto
-        "sidebar" 100px
-        "footer" 50px;
+        "sidebar" 250px
+        "footer" 275px;
 }
 
 @media (min-width: 600px) {
     .elementos-conteiner {
         grid-template:
         "header  header" 150px
-        "navbar  navbar" 50px
+        "navbar  navbar" 100px
         "sidebar main"   auto
-        "footer  footer"50px /
+        "footer  footer"350px /
         200px    auto;
+    }
+    body h1 {
+        font-size: 2rem;
     }
 }
 
@@ -136,8 +143,8 @@ html {
         grid-template:
         "header  header header" 150px
         "navbar  main   sidebar" auto
-        "footer  footer footer"50px /
-         200px   auto   200px;
+        "footer  footer footer" 300px /
+         200px   auto   300px;
     }
     .nav-menu {
         justify-content: space-around;
@@ -147,6 +154,9 @@ html {
     .navbar {
         flex-direction: column;
         justify-content: flex-start;
+    }
+    h1 {
+        font-size: 2rem;
     }
 }
 

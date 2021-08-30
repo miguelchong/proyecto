@@ -10,23 +10,35 @@ body {
     min-height: 100%;
 }
 
+body h1 {
+    font-size: 1rem;
+}
+
 html {
     height: 100%;
 }
 
+.main-conteiner h2{
+    padding: 15px 0 15px 0;
+}
 
-.main-conteiner * {
-    justify-items: left;
+.main-texto {
+    margin: 0 0 0 30px;
+    text-align: start;
+    padding: 30px 0 15px 0;
+}
+
+ol {
+    margin: 0 0 0 40px;
+}
+
+li {
+    margin: 0 0 0 40px;
 }
 
 
-.sidebar-conteiner img {
-    width: 140px;
-    height: auto;
-}
-
-.sidebar-conteiner article p {
-    font-size: 15px;
+.sidebar p {
+    font-size: 13px;
     padding: 25px 0 0 0;
     text-align: justify;
 }
@@ -34,8 +46,7 @@ html {
 .logo > img{
     background-color: #ffffff;
     border-radius: 4px;
-    width: 50px;
-    margin-left: 50px;
+    width: 80px;
 }
 
 .nav-menu {
@@ -45,20 +56,18 @@ html {
 
 .nav-menu-item{
     font-size: 12px;
-    margin: 0 10px;
-    line-height: 30px;
-    text-align: justify;
+    margin: 20px 15px;
+    text-align: initial;
     text-transform: uppercase;
 }
 
 .nav-menu-link {
     padding: 8px 12px;
     border-radius: 3px;
-
 }
 
 .nav-menu-link:hover {
-    background-color: #034574;
+    background-color: #0b1fcf;
     transition: 0.1s;
 }
 
@@ -66,7 +75,7 @@ html {
     box-shadow: -1px 1px 7px 0 rgba(0, 0, 0, 0.75);
     border-radius: 4px;
     padding: 10px;
-    text-align: center;
+    text-align:  left;
 }
 
 .header{
@@ -108,21 +117,24 @@ html {
     display: grid;
     gap: 10px;
     grid-template:
-        "header" 150px
-        "navbar" 50px
+        "header" 50px
+        "navbar" 100px
         "main"   auto
-        "sidebar" 100px
-        "footer" 50px;
+        "sidebar" 250px
+        "footer" 275px;
 }
 
 @media (min-width: 600px) {
     .elementos-conteiner {
         grid-template:
         "header  header" 150px
-        "navbar  navbar" 50px
+        "navbar  navbar" 100px
         "sidebar main"   auto
-        "footer  footer"50px /
+        "footer  footer"350px /
         200px    auto;
+    }
+    body h1 {
+        font-size: 2rem;
     }
 }
 
@@ -131,13 +143,20 @@ html {
         grid-template:
         "header  header header" 150px
         "navbar  main   sidebar" auto
-        "footer  footer footer"50px /
-         200px   auto   200px;
+        "footer  footer footer" 300px /
+         200px   auto   300px;
     }
     .nav-menu {
         justify-content: space-around;
         flex-direction: column;
         margin-right: 40px;
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    h1 {
+        font-size: 2rem;
     }
 }
 

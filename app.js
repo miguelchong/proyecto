@@ -5,7 +5,6 @@ var datos = {
   nomEnt: '',
   pobreza: []
 };
-
 const Estado={
   "Aguascalientes": [27.6, 2.4],
   "Baja California": [22.5, 1.5],
@@ -48,11 +47,12 @@ boton.addEventListener('click', e => {
   datos.pobreza = Estado[ent];
   console.log('En el año 2020 en el Estado de ', ent)
   console.log('la proporción de pobreza y pobreza extrema era de:')
-  console.log(datos.pobreza[0],'y', datos.pobreza[1],'restpectivamente.')
+  console.log(datos.pobreza[0],'% y ', datos.pobreza[1],'% restpectivamente.')
   document.write('En el año 2020 en el Estado de ', ent)
   document.write(' la proporción de pobreza y pobreza extrema era de: ')
-  document.write(datos.pobreza[0],' y ', datos.pobreza[1],' restpectivamente.')
+  document.write(datos.pobreza[0],'% y ', datos.pobreza[1],'% restpectivamente.')
 /*   console.log(ent)
   console.log(datos.pobreza) */
 return datos
 })
+

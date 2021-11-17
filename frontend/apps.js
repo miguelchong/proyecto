@@ -1,8 +1,9 @@
-const URL = "http://localhost:3000/state";
+const URLStates = "http://localhost:3000/state";
+const URLCounties = "http://localhost:3000/county";
 
-fetch (URL)
+fetch (URLStates)
  .then((r) => r.json())
- .then((r) => {
+ .then((r) => { 
    const select = document.getElementById("estado");
 
   r.forEach((e) => {
@@ -13,6 +14,8 @@ fetch (URL)
   });
 
   select.addEventListener("change", (event) => {
-    console.log(event.target.value);
+    fetch(`${URLCounties}/${event.target.value}`)
+    .then((r) => r.json())
+    .then(console.log);
   });
 });

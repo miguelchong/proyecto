@@ -1,8 +1,9 @@
 const {Router} = require('express');
 const router = Router();
 
-const { getCounty, getState } = require('../controllers/index.controller');
-router.get('/county', getCounty);
+const { getState, getCountyById } = require('../controllers/index.controller');
+
 router.get('/state', getState);
+router.get('/county/:id', getCountyById);
 
 module.exports = router;

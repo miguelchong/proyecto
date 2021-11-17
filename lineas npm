@@ -1,0 +1,14 @@
+byobu
+#en una termina
+cd /home/miguel/Escritorio/Trabajo/bedu/Modulo_3/S9/frontend
+python2 -m SimpleHTTPServer 4000
+
+
+cd /home/miguel/Escritorio/Trabajo/bedu/Modulo_3/S9
+clear
+npm init -y
+npm i express pg
+npm i nodemon -D
+npm i pg-format
+node src/index.js
+npm run dev
